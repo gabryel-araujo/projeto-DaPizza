@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top-bar {
+    display: flex;
+    height: 100px;
+    padding-left: 25px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.270);
+}
+
+#logo{
+    width: 120px;
+    height: 120px;
+}
+
+#pizza-1 {
+    width: 530px;
+    height: 495px;
+    
+}
+
+#description {
+    display: flex;
+    background-color: #1c1f21;
+}
+
+#melhor-da-cidade{
+    color: white;
+    font-family: 'Fredoka One', serif;
+    font-weight: 600;
+    font-size: 45px;
+    padding-left: 60px;
+}
+
+#lorem {
+    padding-left: 60px;
+    color: white;
+    font-family: 'Poppins', serif;
+}
+
+.order {
+    display: flex;
+    color: white;
+    background-color: rgb(187, 93, 0);
+    border: 2px dashed white;
+    height: 40px;
+    width: 230px;
+    margin-left: 60px;
+    border-radius: 15px;
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#nome-pizzaria {
+    font-family: 'Paytone One', serif;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(187, 93, 0);
+    text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff,
+    2px 0 0 #fff, 1px 1px 0 #fff, 0 2px 0 #fff, 10px 12px 0 #6e3400;
+}
+
+#cardapio {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 30px;
+}
+
+#pizzas-queijo {
+    background-color: white;
+}
+
+
+.links {
+    font-family: 'Fredoka One', serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.links a {
+    color: black;
+    font-size: 20px;
+    transition: 0.5s all;
+}
+
+.links a:link {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline rgb(187, 93, 0) wavy;
+    font-size: 25px;
+    color: rgb(187, 93, 0);    
+}
+
+.icon {
+    padding: 3px;
+}
+
+.img-pizzas {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s all;
+}
+
+.img-pizzas:hover {
+    width: 270px;
+    height: 270px;
+}
+
+.add-carrinho {
+    color: white;
+    background-color: black;
+    border: 1px dashed grey;
+    height: 60px;
+    width: 180px;
+}
+.descricao-sabor {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    align-items: center;
+    padding: 30px;
+}
