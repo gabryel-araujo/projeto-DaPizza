@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 8em;
+    background-color: wheat;
+}
+
+button {
+    width: 10em;
+    height: 4em;
+    border-radius: 0.6em;
+    border: 0;
+    background-color: darkgoldenrod;
+    font-family: 'Nunito', serif;
+    font-weight: 600;
+    color: white;
+    font-size:0.932em;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#gabryel {
+    height: 15em;
+    border-radius: 1em;
+    padding-left: 1em;
+}
+
+#descricao-landing {
+    text-align: right;
+}
+
+#img-linguagens {
+    width: 20em;
+    border-radius: 1em;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.teste-grid {
+    display: grid;
+}
+
+.grid-1 {
+    grid-row: 5;
+}
+
+.text {
+    text-align: right;
+}
+
+.container {
+    width: 50em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.descricao-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 1em;
+}
+
+.container h1 {
+    font-family: 'Fredoka One', serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.container h3 {
+    font-family: 'Fredoka One', serif;
+    font-weight: 500;
+    color: darkgoldenrod;
+}
+
+.container p {
+    font-family: 'Nunito', serif;
+    color: gray;
+}
+
+.separador {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1em solid darkgoldenrod;
+}
+
+.icons {
+    font-size: 3em;
+}
+
+.fa-html5 {
+    color: orangered;
+}
+
+.fa-css3-alt {
+    color: rgb(56, 195, 250);
+}
+
+.fa-square-js {
+    color: rgb(240, 219, 79);
+}
+
+.fa-python {
+    color: rgb(48, 105, 152);
+}

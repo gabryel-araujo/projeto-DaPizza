@@ -1,83 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/f1952cfd14.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Da Pizza</title>
+    <link rel="icon" href="/images/logoPizzaria.png">
 </head>
 <body>
-    
-    <nav id="top-bar" class="links">
-        <img id="logo" src="/Etapa 01/images/Jp Pizza.png" alt="logo da pizzaria">
-
-        <a class="links" href="#cardapio">Menu</a>
-        <a class="links" href="#">Nossa Localização</a>
-        <a class="links" href="#">Peça aqui</a>
-        <a class="links" href="#">Regiões de Entrega</a>
-        <a class="links" href="#"><i class="fa fa-duotone fa-bars icon"></i>Mais</a>
-    </nav>
-
-    <div id="presentation">
-        <h1 id="nome-pizzaria">
-            Jp<br>Pizza
-        </h1>
-        
-        <button class="order">Peça Agora</button>
-
-
+    <div id="apresentacao">
+        <div id="firstScreen" class="firstScreen alinhamento">
+            <img src="/images/logoPizzaria.png" id="logo-central">
+        </div>
     </div>
 
-    <div id="description">
-        <img src="/images/pizza1.jpg" alt="imagem de pizza" id="pizza-1">
-        <div id="description-2">
-            <h1 id="melhor-da-cidade">A melhor pizza <br>da cidade!</h1>
-            <p id="lorem">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-
+    <nav id="nav-bar" class="links">
+        <a href="#"><img id="logo" src="/images/logoPizzaria.png" alt="logo da pizzaria"></a>
+        <div class="nav-bar-elements">
+            <a class="links" href="#teste-nav">Cardápio</a>
+            <a class="links" href="#about">Sobre Nós</a>
+            <a class="links" href="#localizacao">Nossa Localização</a>
+            <a class="links" href="/html/precos.html">Peça aqui</a>
+            <a class="links" href="/html/landing.html"><i class="fa fa-duotone fa-bars icon"></i>Mais</a>
+            <a class="links link-carrinho" href="#"><i class="fa fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>  
             <button class="order">Peça Agora</button>
         </div>
     </div>
+    <main id="sabores">
+        <!--<div id="teste-nav"></div>-->
+        <h1 class="titulos" id="cardapio">Sabores Premium</h1>
+        <div class="rows" >
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/Queijo Especial.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Queijo Especial</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana,<br> 
+                        molho à base de creme<br> 
+                        de parmesão, mussarela,<br> 
+                        DorBlu, parmesão,<br> 
+                        noz e cranberry.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                    
+                </div> 
+            </div>
 
-    <div id="cardapio">
-
-        <div id="pizzaQueijo"><br>
-            <img class="img-pizzas" src="/images/pizzas/Queijo Especial.jpeg">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/pepperoni.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Pepperoni</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, mussarela,<br> 
+                        molho de tomate integral,<br> 
+                        pepperoni premium, orégano.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
         </div>
-        <div class="descricao-sabor">
-            <h3>Queijo Especial</h3>
-            <p class="descricao-pizza">
-                Farinha italiana, molho à base de<br> 
-                creme e parmesão, mussarela,<br> 
-                DorBlu, parmesão, noz, cranberry
-            </p>
-            <p>Pizza grande - 30cm</p>
-            <button class="add-carrinho">Adicionar ao carrinho</button>
-        </div>  
-        
-        <div id="pizzaPepperoni"><br>
-            <img class="img-pizzas" src="/images/pizzas/pepperoni.jpeg">
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/à moda da casa.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>À moda da casa</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana,<br> 
+                        molho de tomate integral,<br>
+                        mussarela, carne bovina,<br> 
+                        calabresa, linguiça de caça,<br> 
+                        pimentão, cebola roxa,<br> 
+                        molho barbecue e orégano.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/bacon.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Bacon</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho de<br> 
+                        tomate integral, mussarela,<br> 
+                        dorblu, bacon fatiado,<br> 
+                        pimenta, orégano.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
         </div>
-        <div class="descricao-sabor">
-            <h3>pepperoni</h3>
-            <p class="descricao-pizza">
-                Farinha italiana, mussarela,<br> 
-                molho de tomate integral,<br> 
-                salame premium, orégano
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/marguerita.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Marguerita</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, tomate, molho<br>
+                        pesto, orégano.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/Salmão.jpeg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Salmão</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, salmão, tomate,<br>
+                        espinafre, Dorblu, alho,<br> 
+                        limão, azeitonas, orégano.
+                    </p>
+                    <p><i>Massa Premium</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+        <h1 class="titulos" id="cardapio-tradicionais">Sabores Tradicionais</h1>
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/calabresa.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Calabresa</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela, fatias finas<br> 
+                        de cebola, rodelas de calabresa,<br>
+                        azeitona preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/portuguesa.webp">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Portuguesa</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela , presunto<br>
+                        fatiado, ovos fatiados,<br> 
+                        cebola roxa, pimentões<br>
+                        vermelhos e amarelos<br> 
+                        azeitona preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/4-queijos.jpg">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>4 Quejjos</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela, gorgonzola,<br>
+                        provolone, requeijão,<br> 
+                        azeitona preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div >
+                    <img class="img-pizzas" src="/images/pizzas/brocolis.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Brócolis</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela fresco,<br> 
+                        brócolis, alho frito,<br> 
+                        orégano, molho especial<br> 
+                        de parmesão e queijo parmesão
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/frango-catupiry.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Frango Com Catupiry&reg;</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela, frango assado<br> 
+                        em cubos, com catupirry&reg;,<br> 
+                        milho, bacon, azeitona<br> 
+                        preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div >
+                    <img class="img-pizzas" src="/images/pizzas/carne-de-sol.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Carne de Sol</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela, carne de sol<br>
+                        desfiada, finas fatias de cebola,<br> 
+                        Requeijão cremoso, azeitona<br> 
+                        preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/frango-ao-barbecue.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Frango com Barbecue</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela, frango<br> 
+                        assado desfiado, finas<br> 
+                        fatias de bacon, molho barbecue,<br> 
+                        azeitona preta e orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/frango-cheddar.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Frango com Cheddar</h3>
+                    <p class="descricao-pizza">
+                        Queijo mussarela fresco,<br>
+                        frango desfiado temperado<br>
+                        com ervas finas e<br>
+                        cobertura de Cheddar.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <h1 class="titulos" id="cardapio-doces">Sabores Doces</h1>
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/chocolate.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Chocolate ao Leite</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, salmão, tomate,<br>
+                        espinafre, Dorblu, alho,<br> 
+                        limão, azeitonas, orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/chocolate-branco.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Chocolate Branco</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, salmão, tomate,<br>
+                        espinafre, Dorblu, alho,<br> 
+                        limão, azeitonas, orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/chocolate-morango.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Chocolate com Morango</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, salmão, tomate,<br>
+                        espinafre, Dorblu, alho,<br> 
+                        limão, azeitonas, orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="alinhamento-pizzas">
+                <div>
+                    <img class="img-pizzas" src="/images/pizzas/dois-amores.png">
+                </div>
+                <div class="descricao-sabor">
+                    <h3>Dois Amores</h3>
+                    <p class="descricao-pizza">
+                        Farinha italiana, molho<br> 
+                        de tomate integral,<br> 
+                        mussarela, salmão, tomate,<br>
+                        espinafre, Dorblu, alho,<br> 
+                        limão, azeitonas, orégano.
+                    </p>
+                    <p><i>Massa Tradicional</i></p>
+                    <p>Pizza grande - 30cm</p>
+                    <button class="add-carrinho">
+                        Adicionar ao carrinho
+                        <i class="fa fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <h1 class="titulos alinhamento">Quem somos nós?</h1>
+        <div id="about">
+            <img src="/images/pizza.png" alt="imagem de pizza" id="pizza-1">
+            <div id="div-video" class="alinhamento">
+                <h1 id="melhor-da-cidade">A melhor pizza da cidade!</h1>
+
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/T3AHBe0I0yc" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="localizacao-mapa">
+            <p id="lorem">
+                Há mais de 5 anos no mercado, nos tornamos referência quando o assunto<br>
+                é qualidade, preço acessível e acima de tudo confiança. Nosso time de<br>
+                profissionais são treinados e capacitados para lhe oferecer a melhor<br>
+                experiência que você já teve em um atendimento. Venha nos conhecer!
             </p>
-            <p>Pizza grande - 30cm</p>
-            <button class="add-carrinho">Adicionar ao carrinho</button>
-        </div> 
+            <h2 class="titulos" id="localizacao">Nossa Localização</h2>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63342.6764697195!2d-34.939388268750044!3d-7.135564299999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1sen!2sbr!4v1666495722215!5m2!1sen!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-
+<footer class="footer">
+    <div class="footer-div-description">
+    <img class="footer-image" src="/images/logoPizzaria.png">
+        <p class="footer-escrita">
+            A essência DaPizza vem da transparência, da simplicidade,<br>
+            da força do produto e da sua qualidade palpável.<br>
+            DaPizza, sua melhor opção na hora de pedir pizza.
+        </p>
     </div>
-
-
+    <div class="footer-div-icons links">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram footer-icon"></i></a>
+        <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-facebook footer-icon"></i></a>
+    </div>
+</footer>
 </body>
 </html>
