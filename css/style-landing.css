@@ -3,9 +3,17 @@
     margin: 0;
 }
 
+main {
+    margin: 1em 0;
+}
+
+footer {
+    border-top: 0.1em solid darkgoldenrod;
+}
+
 body {
     margin-top: 8em;
-    background-color: wheat;
+    background-color: white;
 }
 
 button {
@@ -62,11 +70,13 @@ main {
 
 .container {
     width: 50em;
-    background-color: white;
+    background-color: wheat;
     display: flex;
     flex-direction: column;
     border-radius: 1em;
     padding: 1em;
+    outline: 0.1em solid darkgoldenrod;
+    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.270);
 }
 
 .descricao-landing {
@@ -80,6 +90,7 @@ main {
     font-family: 'Fredoka One', serif;
     font-size: 2em;
     font-weight: 500;
+    padding-left: 1em;
 }
 
 .container h3 {
@@ -118,3 +129,62 @@ main {
 .fa-python {
     color: rgb(48, 105, 152);
 }
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: 48px 2fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        'icone-html porcentagem-html imagem' 
+        'icone-css porcentagem-css imagem'
+        'icone-js porcentagem-js imagem'
+        'icone-python porcentagem-python imagem';
+    justify-content: center;
+    gap: 1em;
+    align-self: center ;
+}
+
+.imagem-grid img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.imagem-grid {
+    grid-row: 1/5;
+}
+
+.icones-grid {
+    display: grid;
+    grid-row: 1/5;
+}
+
+.porcentagem-grid {
+    display: grid;
+    grid-row: 1/5;
+}
+
+.icones-grid i {
+    display: block;
+}
+
+.container-progresso {
+    height: 25px;
+    background-color: #CCC;
+    position: relative;
+    border-radius: 0.3em;
+    align-self: center;
+}
+
+.container-progresso .barra-progresso{
+    position: absolute;
+    height: 100%;
+    background-color: darkgoldenrod;
+    animation: progress-animation 3s infinite;
+    border-radius: 0.3em;
+}
+
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 60%}
+}
+
