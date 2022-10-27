@@ -44,6 +44,10 @@ dd {
     font-family: 'Pacifico', cursive;
 }
 
+p, h1, h2, h3 {
+    cursor: context-menu;
+}
+
 #nav-bar {
     position: fixed;
     left: 0;
@@ -128,7 +132,7 @@ dd {
 }
 
 #apresentacao {
-    background-image: url(images/background\ principal.png);
+    background-image: url(/images/background-principal.png);
     background-size: 1920px 1080px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -165,7 +169,7 @@ dd {
     margin-top: 1em;
 }
 
-#teste-nav{
+#ajuste-cardapio, #ajuste-about, #ajuste-localizacao{
     height: 100px;
 }
 
@@ -217,9 +221,7 @@ dd {
 }
 
 .img-pizzas:hover {
-    width: 270px;
-    height: 270px;
-    min-width: 150px;
+    cursor: zoom-in;
 }
 
 .add-carrinho {
@@ -286,7 +288,7 @@ dd {
 }
 
 .titulos {
-    border-top: 0.04em solid #f5deb3;
+    border-top: 0.05em solid #f5deb3;
     display: flex;
     align-self: center;
     font-size: 3em;

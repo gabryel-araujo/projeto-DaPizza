@@ -48,10 +48,12 @@ main {
 
 .teste-grid {
     display: grid;
+    grid-area: "icones-linguagens porcentagem imagem";
 }
 
-.grid-1 {
-    grid-row: 5;
+.icones-linguagens {
+    grid-area: icones-linguagens;
+    grid-template-rows: repeat(4, 48px);
 }
 
 .text {
