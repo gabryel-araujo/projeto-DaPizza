@@ -13,25 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-input:focus {
-    outline: 0px;
-}
-
-table, tr, td, th {
-    padding: 0 1em;
-    margin-top: 2em;
-    border: 1px solid #f39b6a;
-    border-collapse: collapse;
-    text-align: center;
-    font-family: 'Poppins', serif;
-    margin-bottom: 2em;
-}
-
-tr:hover {
-    cursor: pointer;
-    background-color: #f5deb3;
-}
-
 ul {
     font-family: 'Fredoka One', serif;
 }
@@ -74,36 +55,11 @@ p, h1, h2, h3 {
     background-color: #1c1f21;
 }
 
-#pedido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: wheat;
-    font-family: 'Poppins', serif;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#pedido a{
-    text-decoration: none;
-    color: rgb(74, 144, 226);
-}
-
 #melhor-da-cidade{
     color: white;
     font-family: 'Fredoka One', serif;
     font-weight: 600;
     font-size: 45px;
-}
-
-#nome-pizzaria {
-    display: none;
-    font-family: 'Fredoka One', serif;
-    text-align: center;
-    font-size: 100px;
-    color: #1c1f21;
-    text-shadow: 2px 2px 1px wheat, 4px 4px 1px black;
 }
 
 #sabores {
@@ -289,7 +245,6 @@ p, h1, h2, h3 {
 
 .titulos {
     border-top: 0.05em solid #f5deb3;
-    display: flex;
     align-self: center;
     font-size: 3em;
     font-family: 'Pacifico',serif;
@@ -320,6 +275,7 @@ p, h1, h2, h3 {
     background-color: #f5deb3;
     height: 10em;
     width: 100%;
+    border-top: 0.1em solid darkgoldenrod;
 }
 
 .footer-image {
@@ -364,3 +320,18 @@ p, h1, h2, h3 {
 .link-carrinho {
     padding-left: 33rem;
 }
+
+.em-producao {
+    padding-top: 8rem;
+    background-image: url("../images/madeira-bg.png");
+    height: 800px;
+}
+
+.em-producao h1 {
+    align-self: center;
+    font-size: 3em;
+    font-family: 'Pacifico',serif;
+    text-shadow: 1px 1px 1px #f5deb3, 3px 3px 1px black;
+    color: #1c1f21;
+}
+

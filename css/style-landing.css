@@ -37,7 +37,6 @@ main {
 #gabryel {
     height: 15em;
     border-radius: 1em;
-    padding-left: 1em;
 }
 
 #descricao-landing {
@@ -108,10 +107,12 @@ main {
     display: flex;
     flex-direction: row;
     border-bottom: 0.1em solid darkgoldenrod;
+    justify-content: center;
 }
 
 .icons {
     font-size: 3em;
+    text-align: center;
 }
 
 .fa-html5 {
@@ -123,7 +124,7 @@ main {
 }
 
 .fa-square-js {
-    color: rgb(240, 219, 79);
+    color: rgb(216, 189, 14);
 }
 
 .fa-python {
@@ -135,7 +136,7 @@ main .grid-container {
     grid-template-columns: 48px 2fr 2fr;
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
-    gap: 1em;
+    gap: 3em;
     align-self: center ;
 }
 
@@ -173,11 +174,27 @@ main .grid-container {
 
 .container-progresso .barra-progresso{
     position: absolute;
-    width: 50%;
     height: 100%;
     background-color: darkgoldenrod;
     border-radius: 0.3em;
 }
+
+.container-progresso .barra-progresso-html {
+    width: 65%;
+}
+
+.container-progresso .barra-progresso-css {
+    width: 50%;
+}
+
+.container-progresso .barra-progresso-js {
+    width: 30%;
+}
+
+.container-progresso .barra-progresso-python {
+    width: 70%;
+}
+
 
 .progresso {
     display: flex;
@@ -188,5 +205,6 @@ main .grid-container {
 .progresso span{
     font-family: 'Nunito', serif;
     color: grey;
-    margin-left: 1.4em;
+    align-items: center;
+    padding: 1em;
 }
