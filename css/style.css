@@ -31,6 +31,10 @@ p, h1, h2, h3 {
     cursor: context-menu;
 }
 
+:target {
+    scroll-margin-top: 3em;
+}
+
 #nav-bar {
     position: fixed;
     left: 0;
