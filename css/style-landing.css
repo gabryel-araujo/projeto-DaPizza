@@ -1,32 +1,25 @@
 *{
     padding: 0;
     margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 main {
-    margin: 1em 0;
+    margin: 2.5rem 0;
 }
 
 footer {
-    border-top: 0.1em solid darkgoldenrod;
+    border-top: 0.1rem solid darkgoldenrod;
 }
 
 body {
-    margin-top: 8em;
+    margin-top: 8rem;
     background-color: white;
-}
-
-button {
-    width: 10em;
-    height: 4em;
-    border-radius: 0.6em;
-    border: 0;
-    background-color: darkgoldenrod;
-    font-family: 'Nunito', serif;
-    font-weight: 600;
-    color: white;
-    font-size:0.932em;
-    cursor: pointer;
 }
 
 main {
@@ -35,17 +28,19 @@ main {
 }
 
 #gabryel {
-    height: 15em;
-    border-radius: 1em;
+    height: 20rem;
+    border-radius: 1.0rem;
+    align-items: center;
 }
 
 #descricao-landing {
-    text-align: right;
+    word-break: break-word;
+    text-align: justify;
 }
 
 #img-linguagens {
-    width: 20em;
-    border-radius: 1em;
+    width: 30rem;
+    border-radius: 1rem;
 }
 
 .skills-row {
@@ -53,14 +48,9 @@ main {
     flex-direction: column;
 }
 
-.teste-grid {
-    display: grid;
-    grid-area: "icones-linguagens porcentagem imagem";
-}
-
 .icones-linguagens {
     grid-area: icones-linguagens;
-    grid-template-rows: repeat(4, 48px);
+    grid-template-rows: repeat(4, 4.8rem);
 }
 
 .text {
@@ -68,28 +58,36 @@ main {
 }
 
 .container {
-    width: 50em;
+    width: 50vw;
     background-color: wheat;
     display: flex;
     flex-direction: column;
-    border-radius: 1em;
-    padding: 1em;
-    outline: 0.1em solid darkgoldenrod;
-    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.270);
+    border-radius: 1rem;
+    padding: 2.0rem;
+    outline: 0.1rem solid darkgoldenrod;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.270);
+    margin-top: 5.0rem;
 }
 
 .descricao-landing {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    row-gap: 1em;
+    row-gap: 1rem;
+}
+
+.descricao-landing h3 {
+    font-size: 1.7rem;
+}
+
+.descricao-landing p {
+    font-size: 1.28rem;
 }
 
 .container h1 {
     font-family: 'Fredoka One', serif;
-    font-size: 2em;
+    font-size: 2.5rem;
     font-weight: 500;
-    padding-left: 1em;
 }
 
 .container h3 {
@@ -106,12 +104,12 @@ main {
 .separador {
     display: flex;
     flex-direction: row;
-    border-bottom: 0.1em solid darkgoldenrod;
-    justify-content: center;
+    border-bottom: 0.1rem solid darkgoldenrod;
+    justify-content: space-evenly;
 }
 
 .icons {
-    font-size: 3em;
+    font-size: 5.0rem;
     text-align: center;
 }
 
@@ -133,16 +131,16 @@ main {
 
 main .grid-container {
     display: grid;
-    grid-template-columns: 48px 2fr 2fr;
+    grid-template-columns: 4.8rem 2fr 2fr;
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
-    gap: 3em;
+    gap: 1.5rem;
     align-self: center ;
 }
 
 .imagem-grid img{
-    width: 300px;
-    border-radius: 10px;
+    width: 30rem;
+    border-radius: 1.0rem;
 }
 
 .imagem-grid {
@@ -165,10 +163,10 @@ main .grid-container {
 
 .container-progresso {
     width: 80%;
-    height: 25px;
+    height: 2.5rem;
     background-color: #CCC;
     position: relative;
-    border-radius: 0.3em;
+    border-radius: 0.5rem;
     align-self: center;
 }
 
@@ -176,7 +174,7 @@ main .grid-container {
     position: absolute;
     height: 100%;
     background-color: darkgoldenrod;
-    border-radius: 0.3em;
+    border-radius: 0.5rem;
 }
 
 .container-progresso .barra-progresso-html {
@@ -204,7 +202,50 @@ main .grid-container {
 
 .progresso span{
     font-family: 'Nunito', serif;
+    font-size: 1.4rem;
     color: grey;
     align-items: center;
-    padding: 1em;
+    padding-left: 2.0rem;
 }
+
+@media (max-width:1200px) {
+    .container {
+        width: 50%;
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2.0rem;
+        outline: 0.1rem solid darkgoldenrod;
+        box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.270);
+        margin-top: 5.0rem;
+    }
+
+    .separador {
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+@media (max-width:1050px) {
+    .porcentagem-grid {
+        visibility: none;
+        justify-self: center;
+    }
+
+    .separador {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .descricao-landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+}
+

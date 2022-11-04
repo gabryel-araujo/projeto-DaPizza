@@ -8,23 +8,14 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    border: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-ul {
-    font-family: 'Fredoka One', serif;
-}
-
-li {
-    text-shadow: 0.05em 0.05em 0.1em wheat, 0.1em 0.1em 0.2em black;
-}
-
-dd {
-    font-family: 'Pacifico', cursive;
+    font-size: 62.5%;
 }
 
 p, h1, h2, h3 {
@@ -65,7 +56,7 @@ p, h1, h2, h3 {
     color: white;
     font-family: 'Fredoka One', serif;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 4.5rem;
 }
 
 #sabores {
@@ -131,8 +122,8 @@ p, h1, h2, h3 {
     margin-top: 1em;
 }
 
-#ajuste-cardapio, #ajuste-about, #ajuste-localizacao{
-    height: 50px;
+#descricao-pizzaria {
+    padding-bottom: 3.5rem;
 }
 
 .firstScreen {
@@ -141,7 +132,7 @@ p, h1, h2, h3 {
 
 .lorem {
     font-family: 'Pacifico', serif;
-    font-size: 1.3rem;
+    font-size: 2.0rem;
     text-shadow: 0.05em 0.05em 0.1em wheat, 0.1em 0.1em 0.2em black;
     margin-top: 3rem;
     font-weight: 500;
@@ -151,13 +142,13 @@ p, h1, h2, h3 {
     font-family: 'Fredoka One', serif;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 1.0rem;
     font-weight: 400;
 }
 
 .links a {
     color: black;
-    font-size: 20px;
+    font-size: 2.0rem;
     transition: 0.5s all;
 }
 
@@ -166,18 +157,18 @@ p, h1, h2, h3 {
 }
 
 .links a:hover {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #f39b6a;
     text-shadow: 1px 1px 3px #1c1f21;    
 }
 
 .icon {
-    padding: 3px;
+    padding: 3.0rem;
 }
 
 .img-pizzas {
-    width: 18rem;
-    height: 18rem;
+    width: 26rem;
+    height: 26rem;
     border-radius: 100%;
     transition: 0.5s all;
 }
@@ -209,32 +200,16 @@ p, h1, h2, h3 {
 .descricao-sabor {
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif; /*Fonte não está sendo renderizada devido ao * no início do css*/
     align-items: center;
-    padding: 30px;
-    text-align: center;  
+    padding: 3.0rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .alinhamento-pizzas {
     display: flex;
-    padding: 0 0 2em 0;
-}
-
-.order {
-    display: none;
-    color: white;
-    background-color: rgb(187, 93, 0);
-    border: 2px dashed white;
-    height: 40px;
-    width: 230px;
-    margin-left: 60px;
-    border-radius: 15px;
-    font-family: 'Poppins', serif;
-    font-weight: 600;
-    font-size: large;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    padding-top: 1.5rem;
 }
 
 .rows {
@@ -252,20 +227,11 @@ p, h1, h2, h3 {
 .titulos {
     border-top: 0.05em solid #f5deb3;
     align-self: center;
-    font-size: 3em;
+    font-size: 4.2rem;
     font-family: 'Pacifico',serif;
     text-shadow: 1px 1px 1px #f5deb3, 3px 3px 1px black;
     color: #1c1f21;
     margin-top: 2em;
-}
-
-.form {
-    width: 550px;
-    height: 35px;
-    border-radius: 8px;
-    border: 1px solid grey;
-    padding-left: 10px;
-    font-family: 'Poppins', serif;
 }
 
 .alinhamento {
@@ -301,13 +267,14 @@ p, h1, h2, h3 {
 }
 
 .footer-icon {
-    padding: 0.8em;
-    font-size: 2em;
+    padding: 2.5rem;
+    font-size: 4.0rem;
 }
 
 .footer-escrita {
     font-family: 'Poppins', serif;
     font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .localizacao-mapa {
@@ -321,10 +288,6 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.link-carrinho {
-    padding-left: 33rem;
 }
 
 .em-producao {
@@ -376,8 +339,8 @@ p, h1, h2, h3 {
 }
 
 .fita-perigo p{
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     font-family: 'Oswald', serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.0rem;
 }
