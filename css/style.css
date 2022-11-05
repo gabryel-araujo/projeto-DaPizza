@@ -13,6 +13,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+*:visited {
+    color: black;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -26,7 +30,7 @@ p, h1, h2, h3 {
     scroll-margin-top: 3em;
 }
 
-#nav-bar {
+#nav-bar0 {
     position: fixed;
     left: 0;
     top: 0;
@@ -34,6 +38,45 @@ p, h1, h2, h3 {
     height: 100px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.270);
     background-color: #f5deb3;
+}
+
+#nav-bar {
+    display: grid;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    background-color: #f5deb3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.270);
+    grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev';
+    justify-items: center;
+    padding: 0;
+    column-gap: 0;
+}
+
+.nav-imagem {
+    grid-area: imagem;
+}
+
+.nav-cardapio {
+    grid-area: cardapio;
+}
+
+.nav-sobre-nos {
+    grid-area: sobre-nos;
+}
+
+.nav-localizacao {
+    grid-area: localizacao;
+}
+
+.nav-peca-aqui {
+    grid-area: peca-aqui;
+}
+
+.nav-about-dev {
+    grid-area: about-dev;
 }
 
 #logo{
@@ -241,40 +284,39 @@ p, h1, h2, h3 {
 }
 
 .footer {
-    display: flex;
-    gap: 10em;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 'imagem descricao icone-insta icone-face';
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #f5deb3;
+    border-top: 0.1em solid darkgoldenrod;
     height: 10em;
     width: 100%;
-    border-top: 0.1em solid darkgoldenrod;
 }
 
 .footer-image {
-    width: 10em;
-}
-
-.footer-div-description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer-div-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer-icon {
-    padding: 2.5rem;
-    font-size: 4.0rem;
+    width: 10rem;
+    grid-area: imagem;
 }
 
 .footer-escrita {
+    grid-area: descricao;
     font-family: 'Poppins', serif;
     font-weight: 600;
     font-size: 1.4rem;
+}
+
+.fa-instagram {
+    grid-area: icone-insta;
+}
+
+.fa-facebook {
+    grid-area: icone-face;
+}
+
+.footer i {
+    padding: 2.5rem;
+    font-size: 4.0rem;
 }
 
 .localizacao-mapa {
@@ -343,4 +385,15 @@ p, h1, h2, h3 {
     font-family: 'Oswald', serif;
     font-weight: 700;
     font-size: 2.0rem;
+}
+
+@media (max-width: 690px){
+
+    .footer-escrita {
+        display: none;
+    }
+
+    .footer {
+        grid-template-areas: 'icone-insta  imagem icone-face';
+    }
 }

@@ -237,9 +237,8 @@ main {
 }
 
 @media (max-width: 920px){
-
     .flex-container {
-        width: 70vw;
+        width: 85vw;
     }
 
     .container-progresso {
@@ -258,9 +257,7 @@ main {
     #gabryel {
         border-radius: 0rem;
     }
-}
 
-@media (max-width: 920px) {
     .grid-titulo {
         text-align: center;
         font-size: 2.2rem;
@@ -271,9 +268,3 @@ main {
     }
 }
 
-@media (max-width: 835px){
-
-    .footer-div-description {
-        align-items: center;
-    }
-}
