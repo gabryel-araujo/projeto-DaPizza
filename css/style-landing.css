@@ -158,7 +158,7 @@ main {
 }
 
 .barra-progresso-html{
-    width: 13.7rem;
+    width: 70%;
 }
 
 .css {
@@ -166,7 +166,7 @@ main {
 }
 
 .barra-progresso-css{
-    width: 10rem;
+    width: 50%;
 }
 
 .js {
@@ -174,7 +174,7 @@ main {
 }
 
 .barra-progresso-js{
-    width: 8rem;
+    width: 30%;
 }
 
 .py {
@@ -182,7 +182,7 @@ main {
 }
 
 .barra-progresso-py{
-    width: 16rem;
+    width: 60%;
 }
 
 .percentuais {
@@ -213,4 +213,67 @@ main {
     grid-area: imagem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.270);
+}
+
+@media (max-width: 1220px){
+    .grid-container-skills {
+        grid-template-areas:
+            'skill . . .' 
+            'html barra-html porc-html'
+            'css barra-css porc-css'
+            'js barra-js porc-js'
+            'py barra-py porc-py';
+        justify-content: center;
+    }
+
+    .grid-img-programacao {
+        display: none;
+    }
+
+    .container-progresso {
+        width: 30rem;
+    }
+
+}
+
+@media (max-width: 920px){
+
+    .flex-container {
+        width: 70vw;
+    }
+
+    .container-progresso {
+        width: 20rem;
+    }
+
+    .grid-container-apresentacao {
+        grid-template-areas:
+            'titulo'
+            'rank'
+            'imagem'
+            'descricao';
+        justify-items: center;
+    }
+
+    #gabryel {
+        border-radius: 0rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .grid-titulo {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .container-progresso {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 835px){
+
+    .footer-div-description {
+        align-items: center;
+    }
 }
