@@ -28,9 +28,10 @@ main {
 }
 
 #gabryel {
-    height: 20rem;
+    height: 18rem;
     border-radius: 1.0rem;
     align-items: center;
+    grid-area: imagem;
 }
 
 #descricao-landing {
@@ -43,69 +44,68 @@ main {
     border-radius: 1rem;
 }
 
-.skills-row {
+.flex-container {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-}
-
-.icones-linguagens {
-    grid-area: icones-linguagens;
-    grid-template-rows: repeat(4, 4.8rem);
-}
-
-.text {
-    text-align: right;
-}
-
-.container {
     width: 50vw;
     background-color: wheat;
-    display: flex;
-    flex-direction: column;
     border-radius: 1rem;
-    padding: 2.0rem;
+    padding: 2rem;
     outline: 0.1rem solid darkgoldenrod;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.270);
-    margin-top: 5.0rem;
 }
 
-.descricao-landing {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 1rem;
+.grid-container-apresentacao {
+    display: grid;
+    grid-template-areas:
+        'titulo titulo'
+        'imagem rank'
+        'imagem descricao';
 }
 
-.descricao-landing h3 {
-    font-size: 1.7rem;
-}
-
-.descricao-landing p {
-    font-size: 1.28rem;
-}
-
-.container h1 {
+.grid-titulo {
+    grid-area: titulo;
     font-family: 'Fredoka One', serif;
     font-size: 2.5rem;
     font-weight: 500;
+    text-align: right;
 }
 
-.container h3 {
+.grid-rank {
+    grid-area: rank;
     font-family: 'Fredoka One', serif;
     font-weight: 500;
     color: darkgoldenrod;
+    font-size: 1.7rem;
+    text-align: right;
 }
 
-.container p {
+.grid-descricao {
+    grid-area: descricao;
     font-family: 'Nunito', serif;
     color: gray;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: right;
+    text-align: justify;
 }
 
-.separador {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 0.1rem solid darkgoldenrod;
-    justify-content: space-evenly;
+.grid-item-descricao {
+    text-align: right;
+}
+
+
+.grid-container-skills {
+    display: grid;
+    grid-template-areas:
+        'skill . . . .' 
+        'html barra-html porc-html imagem imagem'
+        'css barra-css porc-css imagem imagem'
+        'js barra-js porc-js imagem imagem'
+        'py barra-py porc-py imagem imagem';
+    align-items: center;
 }
 
 .icons {
@@ -113,139 +113,104 @@ main {
     text-align: center;
 }
 
+.skill {
+    grid-area: skill;
+    font-family: 'Fredoka One', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
 .fa-html5 {
     color: orangered;
+    grid-area: html;
 }
 
 .fa-css3-alt {
     color: rgb(56, 195, 250);
+    grid-area: css;
 }
 
 .fa-square-js {
     color: rgb(216, 189, 14);
+    grid-area: js;
 }
 
 .fa-python {
     color: rgb(48, 105, 152);
-}
-
-main .grid-container {
-    display: grid;
-    grid-template-columns: 4.8rem 2fr 2fr;
-    grid-template-rows: repeat(4, 1fr);
-    justify-content: center;
-    gap: 1.5rem;
-    align-self: center ;
-}
-
-.imagem-grid img{
-    width: 30rem;
-    border-radius: 1.0rem;
-}
-
-.imagem-grid {
-    grid-row: 1/5;
-}
-
-.icones-grid {
-    display: grid;
-    grid-row: 1/5;
-}
-
-.porcentagem-grid {
-    display: grid;
-    grid-row: 1/5;
-}
-
-.icones-grid i {
-    display: block;
+    grid-area: py;
 }
 
 .container-progresso {
-    width: 80%;
-    height: 2.5rem;
-    background-color: #CCC;
-    position: relative;
-    border-radius: 0.5rem;
-    align-self: center;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    background-color: rgb(201, 201, 201);
 }
 
-.container-progresso .barra-progresso{
-    position: absolute;
-    height: 100%;
+.barra-progresso {
+    height: 3rem;
+    border-radius: 0.8rem;
     background-color: darkgoldenrod;
-    border-radius: 0.5rem;
 }
 
-.container-progresso .barra-progresso-html {
-    width: 65%;
+.html {
+    grid-area: barra-html;
 }
 
-.container-progresso .barra-progresso-css {
-    width: 50%;
+.barra-progresso-html{
+    width: 13.7rem;
 }
 
-.container-progresso .barra-progresso-js {
-    width: 30%;
+.css {
+    grid-area: barra-css;
 }
 
-.container-progresso .barra-progresso-python {
-    width: 70%;
+.barra-progresso-css{
+    width: 10rem;
 }
 
-
-.progresso {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.js {
+    grid-area: barra-js;
 }
 
-.progresso span{
+.barra-progresso-js{
+    width: 8rem;
+}
+
+.py {
+    grid-area: barra-py ;
+}
+
+.barra-progresso-py{
+    width: 16rem;
+}
+
+.percentuais {
+    padding: 2rem;
     font-family: 'Nunito', serif;
-    font-size: 1.4rem;
-    color: grey;
-    align-items: center;
-    padding-left: 2.0rem;
+    color: gray;
+    font-size: 1.3rem;
 }
 
-@media (max-width:1200px) {
-    .container {
-        width: 50%;
-        background-color: wheat;
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        padding: 2.0rem;
-        outline: 0.1rem solid darkgoldenrod;
-        box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.270);
-        margin-top: 5.0rem;
-    }
-
-    .separador {
-        align-items: flex-end;
-        text-align: right;
-    }
+.porc-html {
+    grid-area: porc-html;
 }
 
-@media (max-width:1050px) {
-    .porcentagem-grid {
-        visibility: none;
-        justify-self: center;
-    }
-
-    .separador {
-        align-items: center;
-    }
-
+.porc-css {
+    grid-area: porc-css;
 }
 
-@media (max-width: 910px) {
-    .descricao-landing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 1rem;
-    }
+.porc-js {
+    grid-area: porc-js;
 }
 
+.porc-py {
+    grid-area: porc-py;
+}
+
+.grid-img-programacao {
+    width: 25rem;
+    grid-area: imagem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.270);
+}
