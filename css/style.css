@@ -169,6 +169,78 @@ p, h1, h2, h3 {
     padding-bottom: 3.5rem;
 }
 
+#pizza-queijo {
+    grid-area: pizza-1;
+}
+
+#pizza-pepperoni {
+    grid-area: pizza-2;
+}
+
+#pizza-amoda {
+    grid-area: pizza-3;
+}
+
+#pizza-bacon {
+    grid-area: pizza-4;
+}
+
+#pizza-marguerita {
+    grid-area: pizza-5;
+}
+
+#pizza-salmao {
+    grid-area: pizza-6;
+}
+
+#pizza-calabresa {
+    grid-area: pizza-7;
+}
+
+#pizza-portuguesa {
+    grid-area: pizza-8;
+}
+
+#pizza-4queijos {
+    grid-area: pizza-9;
+}
+
+#pizza-brocolis {
+    grid-area: pizza-10;
+}
+
+#pizza-franpiry {
+    grid-area: pizza-11;
+}
+
+#pizza-francheddar {
+    grid-area: pizza-12;
+}
+
+#pizza-franbarbecue {
+    grid-area: pizza-13;
+}
+
+#pizza-carnesol {
+    grid-area: pizza-14;
+}
+
+#pizza-picanha{
+    grid-area: pizza-15;
+}
+
+#pizza-chocolateP {
+    grid-area: pizza-16;
+}
+
+#pizza-chocolateB {
+    grid-area: pizza-17;
+}
+
+#pizza-dois-amores {
+    grid-area: pizza-18;    
+}
+
 .firstScreen {
     font-family: 'Fredoka One', serif;
 }
@@ -274,7 +346,6 @@ p, h1, h2, h3 {
     font-family: 'Pacifico',serif;
     text-shadow: 1px 1px 1px #f5deb3, 3px 3px 1px black;
     color: #1c1f21;
-    margin-top: 2em;
 }
 
 .alinhamento {
@@ -385,6 +456,111 @@ p, h1, h2, h3 {
     font-family: 'Oswald', serif;
     font-weight: 700;
     font-size: 2.0rem;
+}
+
+.grid-container-cardapio {
+    display: grid;
+    grid-template-areas: 
+        '. premium .'
+        'pizza-1 pizza-2 pizza-3'
+        'descr-1 descr-2 descr-3'
+        'pizza-4 pizza-5 pizza-6'
+        'descr-4 descr-5 descr-6'
+        '. tradicional .'
+        'pizza-7 pizza-8 pizza-9'
+        'descr-7 descr-8 descr-9'
+        'pizza-10 pizza-11 pizza-12'
+        'descr-10 descr-11 descr-12'
+        'pizza-13 pizza-15 pizza-14'
+        'descr-13 descr-15 descr-14'
+        '. doce .'
+        'pizza-16 pizza-17 pizza-18'
+        'descr-16 descr-17 descr-18';
+    justify-items: center;
+}
+
+.descricao-queijo {
+    grid-area: descr-1;
+}
+
+.descricao-pepperoni {
+    grid-area: descr-2;
+}
+
+.descricao-amoda {
+    grid-area: descr-3;
+}
+
+.descricao-bacon {
+    grid-area: descr-4;
+}
+
+.descricao-marguerita {
+    grid-area: descr-5;
+}
+
+.descricao-salmao {
+    grid-area: descr-6;
+}
+
+.descricao-calabresa {
+    grid-area: descr-7;
+}
+
+.descricao-portuguesa {
+    grid-area: descr-8;
+}
+
+.descricao-4queijos {
+    grid-area: descr-9;
+}
+
+.descricao-brocolis {
+    grid-area: descr-10;
+}
+
+.descricao-franpiry {
+    grid-area: descr-11;
+}
+
+.descricao-francheddar {
+    grid-area: descr-12;
+}
+
+.descricao-franbarbecue {
+    grid-area: descr-13;
+}
+
+.descricao-carnesol {
+    grid-area: descr-14;
+}
+
+.descricao-picanha {
+    grid-area: descr-15;
+}
+
+.descricao-chocolateP {
+    grid-area: descr-16;
+}
+
+.descricao-chocolateB {
+    grid-area: descr-17;
+}
+
+.descricao-dois-amores {
+    grid-area: descr-18;
+}
+
+.titulo-premium {
+    grid-area: premium;
+}
+
+.titulo-tradicional {
+    grid-area: tradicional;
+}
+
+.titulo-doce {
+    grid-area: doce;
 }
 
 @media (max-width: 690px){
