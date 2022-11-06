@@ -39,34 +39,12 @@ p, h1, h2, h3 {
     height: 10rem;
     background-color: #f5deb3;
     box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.270);
+    grid-template-rows: 10rem;
     grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev';
     justify-items: center;
     padding: 0;
     column-gap: 0;
-}
-
-.nav-imagem {
-    grid-area: imagem;
-}
-
-.nav-cardapio {
-    grid-area: cardapio;
-}
-
-.nav-sobre-nos {
-    grid-area: sobre-nos;
-}
-
-.nav-localizacao {
-    grid-area: localizacao;
-}
-
-.nav-peca-aqui {
-    grid-area: peca-aqui;
-}
-
-.nav-about-dev {
-    grid-area: about-dev;
+    
 }
 
 #logo{
@@ -85,11 +63,12 @@ p, h1, h2, h3 {
     background-color: #1c1f21;
 }
 
-#melhor-da-cidade{
-    color: white;
+#titulo-apresentacao{
+    color: wheat;
     font-family: 'Fredoka One', serif;
     font-weight: 600;
     font-size: 4.5rem;
+    padding-bottom: 1rem;
 }
 
 #firstScreen{
@@ -105,17 +84,6 @@ p, h1, h2, h3 {
 
 #logo-central {
     margin-top: 10rem;
-}
-
-#tabela-frete {
-    display: flex;
-    flex-direction: column;
-}
-
-#sabores-tradicionais {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
 }
 
 #video {
@@ -209,6 +177,30 @@ p, h1, h2, h3 {
     grid-area: pizza-18;    
 }
 
+.nav-imagem {
+    grid-area: imagem;
+}
+
+.nav-cardapio {
+    grid-area: cardapio;
+}
+
+.nav-sobre-nos {
+    grid-area: sobre-nos;
+}
+
+.nav-localizacao {
+    grid-area: localizacao;
+}
+
+.nav-peca-aqui {
+    grid-area: peca-aqui;
+}
+
+.nav-about-dev {
+    grid-area: about-dev;
+}
+
 .firstScreen {
     font-family: 'Fredoka One', serif;
 }
@@ -261,6 +253,23 @@ p, h1, h2, h3 {
     cursor: zoom-in;
 }
 
+.add-carrinho {
+    color: white;
+    background-color: #1c1f21;
+    border-radius: 0.5rem;
+    height: 6rem;
+    width: 18rem;
+    cursor: pointer;
+}
+
+.add-carrinho:hover {
+    transition: 0.8s all;
+    color: black;
+    background-color: #f5deb3;
+    border: 0.1rem solid #f5deb3;
+    cursor: pointer;
+}
+
 .descricao-sabor {
     display: flex;
     flex-direction: column;
@@ -289,7 +298,7 @@ p, h1, h2, h3 {
 }
 
 .titulos {
-    border-top: 0.05em solid #f5deb3;
+    border-top: 0.05rem solid #f5deb3;
     align-self: center;
     font-size: 4.2rem;
     font-family: 'Pacifico',serif;
@@ -545,6 +554,15 @@ p, h1, h2, h3 {
         display: none;
     }
 
+    #titulo-apresentacao {
+        border-top: 0.05em solid #f5deb3;
+        align-self: center;
+        font-size: 4.2rem;
+        font-family: 'Pacifico',serif;
+        text-shadow: 0.1rem 0.1rem 0.1rem #f5deb3, 0.3rem 0.3rem 0.1rem black;
+        color: #1c1f21;
+    }
+
     #about{
         justify-content: center;
         background-color: white;
@@ -622,3 +640,18 @@ p, h1, h2, h3 {
         height: 15rem;
     }
 
+    .lorem {
+        font-size: 1.4rem;
+    }
+
+    #titulo-apresentacao {
+        font-size: 3.6rem;
+    }
+
+}
+
+@media (max-width: 905px) {
+    #nav-bar {
+        grid-template-rows: 10rem repeat(5, 1rem);
+    }
+}
