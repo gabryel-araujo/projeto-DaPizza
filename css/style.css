@@ -27,17 +27,7 @@ p, h1, h2, h3 {
 }
 
 :target {
-    scroll-margin-top: 3em;
-}
-
-#nav-bar0 {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.270);
-    background-color: #f5deb3;
+    scroll-margin-top: 12rem;
 }
 
 #nav-bar {
@@ -48,7 +38,7 @@ p, h1, h2, h3 {
     width: 100%;
     height: 10rem;
     background-color: #f5deb3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.270);
+    box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.270);
     grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev';
     justify-items: center;
     padding: 0;
@@ -80,13 +70,13 @@ p, h1, h2, h3 {
 }
 
 #logo{
-    width: 120px;
-    height: 120px;
+    width: 12rem;
+    height: 12rem;
 }
 
 #pizza-1 {
-    width: 530px;
-    height: 500px;
+    width: 53rem;
+    height: 50rem;
 }
 
 #about {
@@ -102,41 +92,19 @@ p, h1, h2, h3 {
     font-size: 4.5rem;
 }
 
-#sabores {
-    display: flex;
-    flex-direction: column;
-}
-
-#buscar {
-    font-family: 'Poppins', serif;
-    width: 565px;
-    height: 35px;
-    background-color: #70a401;
-    border-radius: 8px;
-    border: 1px solid #70a401;
-    color: white;
-    font-weight: 700;
-}
-
-#buscar:hover {
-    color: #1c1f21;
-    cursor: pointer;
-}
-
 #firstScreen{
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 #apresentacao {
     background-image: url("../images/backgroundpizza.png");
-    background-size: 1920px 1080px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.270);
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.270);
 }
 
 #logo-central {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 #tabela-frete {
@@ -152,17 +120,17 @@ p, h1, h2, h3 {
 
 #video {
     border-radius: 1.2em;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.270);
+    box-shadow: 0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.270);
 }
 
 #mapa {
     border: 0;
-    border-radius: 1em;
-    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.270);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.270);
 }
 
 #cardapio {
-    margin-top: 1em;
+    margin-top: 5rem;
 }
 
 #descricao-pizzaria {
@@ -248,9 +216,10 @@ p, h1, h2, h3 {
 .lorem {
     font-family: 'Pacifico', serif;
     font-size: 2.0rem;
-    text-shadow: 0.05em 0.05em 0.1em wheat, 0.1em 0.1em 0.2em black;
+    text-shadow: 0.05rem 0.05rem 0.1rem wheat, 0.1rem 0.1rem 0.2rem black;
     margin-top: 3rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .links {
@@ -274,7 +243,7 @@ p, h1, h2, h3 {
 .links a:hover {
     font-size: 2.5rem;
     color: #f39b6a;
-    text-shadow: 1px 1px 3px #1c1f21;    
+    text-shadow: 0.1rem 0.1rem 0.3rem #1c1f21;    
 }
 
 .icon {
@@ -290,26 +259,6 @@ p, h1, h2, h3 {
 
 .img-pizzas:hover {
     cursor: zoom-in;
-}
-
-.add-carrinho {
-    color: white;
-    background-color: #1c1f21;
-    border-radius: 5px;
-    height: 60px;
-    width: 180px;
-    cursor: pointer;
-}
-
-.add-carrinho:hover {
-    transition: 0.8s all;
-    color: black;
-    background-color: #f5deb3;
-    border: 1px solid #f5deb3;
-    border-radius: 5px;
-    height: 60px;
-    width: 180px;
-    cursor: pointer;
 }
 
 .descricao-sabor {
@@ -344,7 +293,7 @@ p, h1, h2, h3 {
     align-self: center;
     font-size: 4.2rem;
     font-family: 'Pacifico',serif;
-    text-shadow: 1px 1px 1px #f5deb3, 3px 3px 1px black;
+    text-shadow: 0.1rem 0.1rem 0.1rem #f5deb3, 0.3rem 0.3rem 0.1rem black;
     color: #1c1f21;
 }
 
@@ -360,8 +309,8 @@ p, h1, h2, h3 {
     align-items: center;
     justify-content: space-evenly;
     background-color: #f5deb3;
-    border-top: 0.1em solid darkgoldenrod;
-    height: 10em;
+    border-top: 0.1rem solid darkgoldenrod;
+    height: 10rem;
     width: 100%;
 }
 
@@ -563,6 +512,50 @@ p, h1, h2, h3 {
     grid-area: doce;
 }
 
+@media (max-width: 1300px) {
+    .grid-container-cardapio {
+        display: grid;
+        grid-template-areas: 
+            'premium premium'
+            'pizza-1 pizza-2'
+            'descr-1 descr-2'
+            'pizza-3 pizza-4'
+            'descr-3 descr-4'
+            'pizza-5 pizza-6'
+            'descr-5 descr-6'
+            'tradicional tradicional'
+            'pizza-7 pizza-8'
+            'descr-7 descr-8'
+            'pizza-9 pizza-10'
+            'descr-9 descr-10'
+            'pizza-11 pizza-12'
+            'descr-11 descr-12'
+            'pizza-13 pizza-14'
+            'descr-13 descr-14'
+            'pizza-15 .'
+            'descr-15 .'
+            'doce doce'
+            'pizza-16 pizza-17'
+            'descr-16 descr-17'
+            'pizza-18 .'
+            'descr-18 .';
+    }
+
+    #pizza-1 {
+        display: none;
+    }
+
+    #about{
+        justify-content: center;
+        background-color: white;
+    }
+
+    #about #div-video iframe{
+        width: 40rem;
+        height: 21rem;
+    }
+}
+
 @media (max-width: 690px){
 
     .footer-escrita {
@@ -570,6 +563,62 @@ p, h1, h2, h3 {
     }
 
     .footer {
-        grid-template-areas: 'icone-insta  imagem icone-face';
+        grid-template-areas: 'icone-insta imagem icone-face';
     }
+
+    .grid-container-cardapio {
+        grid-template-areas: 
+            'premium'
+            'pizza-1' 
+            'descr-1'
+            'pizza-2' 
+            'descr-2'
+            'pizza-3' 
+            'descr-3'
+            'pizza-4' 
+            'descr-4'
+            'pizza-5' 
+            'descr-5'
+            'pizza-6' 
+            'descr-6'
+            'tradicional'
+            'pizza-7' 
+            'descr-7'
+            'pizza-8' 
+            'descr-8'
+            'pizza-9' 
+            'descr-9'
+            'pizza-10'
+            'descr-10'
+            'pizza-11' 
+            'descr-11'
+            'pizza-12'
+            'descr-12'
+            'pizza-13' 
+            'descr-13'
+            'pizza-14'
+            'descr-14'
+            'pizza-15'
+            'descr-15'
+            'doce'
+            'pizza-16' 
+            'descr-16'
+            'pizza-17'
+            'descr-17'
+            'pizza-18'
+            'descr-18';
+    }
+
+    #mapa {
+        width: 30rem;
+        height: 30rem;
+    }
+
 }
+
+@media (max-width: 590px){
+    #about #div-video iframe{
+        width: 30rem;
+        height: 15rem;
+    }
+
