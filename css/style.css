@@ -33,7 +33,6 @@ p, h1, h2, h3 {
 #nav-bar {
     display: grid;
     position: fixed;
-    left: 0;
     top: 0;
     width: 100%;
     height: 10rem;
@@ -44,7 +43,6 @@ p, h1, h2, h3 {
     justify-items: center;
     padding: 0;
     column-gap: 0;
-    
 }
 
 #logo{
@@ -78,6 +76,7 @@ p, h1, h2, h3 {
 #apresentacao {
     background-image: url("../images/backgroundpizza.png");
     background-repeat: no-repeat;
+    width: 100vw;
     background-attachment: fixed;
     box-shadow: 0 0.5rem rgba(0, 0, 0, 0.270);
 }
@@ -346,6 +345,15 @@ p, h1, h2, h3 {
 .footer i {
     padding: 2.5rem;
     font-size: 4.0rem;
+    color: black;
+}
+
+.footer i:visited {
+    color: black;
+}
+
+.footer-block {
+    display: block;
 }
 
 .localizacao-mapa {
@@ -653,5 +661,19 @@ p, h1, h2, h3 {
 @media (max-width: 905px) {
     #nav-bar {
         grid-template-rows: 10rem repeat(5, 1rem);
+        grid-template-areas: 'imagem cardapio about-dev';
     }
+
+    .nav-sobre-nos {
+        display: none;
+    }
+    
+    .nav-localizacao {
+       display: none;
+    }
+    
+    .nav-peca-aqui {
+        display: none;
+    }
+    
 }
