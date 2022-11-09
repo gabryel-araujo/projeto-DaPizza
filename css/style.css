@@ -10,7 +10,6 @@
     margin: 0;
     box-sizing: border-box;
     border: 0;
-    
 }
 
 *:visited {
@@ -389,7 +388,7 @@ header :nth-child(7){
 .em-producao {
     padding-top: 8rem;
     background-image: url("../images/madeira-bg.png");
-    height: 50em;
+    height: 100vh;
     width: 100vw;
     background-size: cover;
 }
@@ -422,6 +421,8 @@ header :nth-child(7){
     width: 100vw;
     height: 6em;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-amarelo {
@@ -435,7 +436,6 @@ header :nth-child(7){
 }
 
 .fita-perigo p{
-    padding-top: 1.5rem;
     font-family: 'Oswald', serif;
     font-weight: 700;
     font-size: 2.0rem;
@@ -684,7 +684,11 @@ header :nth-child(7){
     header :nth-child(7){
         display: block;
     }
-
+    
+    .em-producao :nth-child(2){
+        font-size: 3rem;
+    }
+  
 }
 
 @media (max-width: 905px) {

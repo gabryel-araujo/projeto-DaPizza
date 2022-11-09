@@ -242,7 +242,7 @@ main {
     }
 
     .container-progresso {
-        width: 20rem;
+        width: 40rem;
     }
 
     .grid-container-apresentacao {
@@ -263,8 +263,10 @@ main {
         font-size: 2.2rem;
     }
 
-    .container-progresso {
-        width: 15rem;
-    }
 }
 
+@media (max-width: 630px){
+    .container-progresso {
+        width: 20rem;
+    }
+}
