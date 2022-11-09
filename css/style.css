@@ -10,7 +10,7 @@
     margin: 0;
     box-sizing: border-box;
     border: 0;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 
 *:visited {
@@ -20,10 +20,21 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 p, h1, h2, h3 {
     cursor: context-menu;
+}
+
+header :nth-child(7){
+    display: none;
 }
 
 :target {
@@ -41,9 +52,11 @@ p, h1, h2, h3 {
     grid-template-rows: 10rem;
     grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev';
     justify-items: center;
+    justify-content: start;
     padding: 0;
     column-gap: 0;
     z-index: 1;
+    gap: 1rem;
 }
 
 #logo{
@@ -234,9 +247,9 @@ p, h1, h2, h3 {
 }
 
 .links a:hover {
-    font-size: 2.5rem;
     color: #f39b6a;
-    text-shadow: 0.1rem 0.1rem 0.3rem #1c1f21;    
+    text-shadow: 0.1rem 0.1rem 0.3rem #1c1f21;
+    transform: scale(1.2);   
 }
 
 .icon {
@@ -323,6 +336,7 @@ p, h1, h2, h3 {
     border-top: 0.1rem solid darkgoldenrod;
     height: 10rem;
     width: 100%;
+    margin-top: auto;
 }
 
 .footer-image {
@@ -657,6 +671,18 @@ p, h1, h2, h3 {
 
     #titulo-apresentacao {
         font-size: 3.6rem;
+    }
+
+    #logo-central {
+        width: 100%;
+    }
+
+    header :nth-child(6){
+        display: none;
+    }
+
+    header :nth-child(7){
+        display: block;
     }
 
 }
