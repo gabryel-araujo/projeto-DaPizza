@@ -49,7 +49,7 @@ header :nth-child(7){
     background-color: #f5deb3;
     box-shadow: 0 0.3rem 0.1rem rgba(0, 0, 0, 0.270);
     grid-template-rows: 10rem;
-    grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev';
+    grid-template-areas: 'imagem cardapio sobre-nos localizacao peca-aqui about-dev login';
     justify-items: center;
     justify-content: start;
     padding: 0;

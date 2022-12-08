@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  margin-top: 10rem;
+}
+
+#main-cadastro {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'ilustracao tela-login';
+  padding: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-imagem{
+  width: 50rem;
+  height: 50rem;
+  background-color: #f5deb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: ilustracao;
+  border-radius: 1rem 0 0 1rem;
+}
+
+#login-imagem img{
+  width: 40rem;
+  height: 40rem;
+}
+
+#login{
+  width: 50rem;
+  height: 50rem;
+  background-color: rgb(36, 36, 36);
+  grid-area: tela-login;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  align-items: center;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#area-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+#area-cadastro #input-email, #input-senha, #input-entrar {
+  width: 27rem;
+  height: 2.75rem;
+  border-radius: 0.6rem;
+  outline: 0;
+  padding: 0.4rem;
+  background-color: #f5deb3;
+}
+
+#lembrar-esqueceu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inscrever-se {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logar-com {
+  font-size: 3.5rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.login-title {
+  font-size: 3.8rem;
+  font-variant: small-caps;
+  color: white;
+}
+
+.outro-login {
+  font-size: 2rem;
+  font-variant: small-caps;
+  color: white;
+}
+
+.descricao-login {
+  font-size: 1.5rem;
+  color: white;
+}
