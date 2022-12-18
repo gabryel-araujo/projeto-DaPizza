@@ -694,7 +694,7 @@ header :nth-child(7){
 @media (max-width: 905px) {
     #nav-bar {
         grid-template-rows: 10rem repeat(5, 1rem);
-        grid-template-areas: 'imagem cardapio about-dev';
+        grid-template-areas: 'imagem cardapio login';
     }
 
     .nav-sobre-nos {
@@ -709,4 +709,7 @@ header :nth-child(7){
         display: none;
     }
     
+    .nav-about-dev {
+        display: none;
+    }
 }

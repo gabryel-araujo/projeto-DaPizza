@@ -137,3 +137,23 @@ body{
   }
   
 }
+
+@media (max-width: 1078px) {
+  #main-cadastro {
+    grid-template-areas: 'tela-login';
+  }
+
+  #login-imagem {
+    display: none;
+  }
+
+  #login {
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 578px) {
+  #login {
+    width: 36rem;
+  }
+}
