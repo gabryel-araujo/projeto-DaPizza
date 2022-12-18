@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  margin-top: 10rem;
+}
+
+#main-cadastro {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'ilustracao tela-login';
+  padding: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-imagem{
+  width: 50rem;
+  height: 55rem;
+  background-color: #f5deb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: ilustracao;
+  border-radius: 1rem 0 0 1rem;
+}
+
+#login-imagem img{
+  width: 40rem;
+  height: 40rem;
+}
+
+#login{
+  width: 55rem;
+  height: 55rem;
+  background-color: rgb(36, 36, 36);
+  grid-area: tela-login;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  align-items: center;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#area-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+#area-cadastro #input-email, #input-senha, #input-senha-2, #input-entrar, #input-nome, #input-sobrenome {
+  width: 35rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  outline: 0;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+#input-entrar {
+  margin-top: 1.5rem;
+  /* background-color: #36fd51; */
+  background-color: #f5deb3;
+  font-size: 1.8rem;
+}
+
+#input-entrar:hover {
+  cursor: pointer;
+  animation: deslocarParaDireita 3s;
+}
+
+#lembrar-esqueceu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inscrever-se {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inscrever-se a, #lembrar-esqueceu a {
+  font-size: 1.4rem;
+  color: wheat;
+}
+
+
+.login-title {
+  font-size: 3.8rem;
+  font-variant: small-caps;
+  color: white;
+}
+
+.outro-login {
+  font-size: 2rem;
+  font-variant: small-caps;
+  color: white;
+  margin-top: 1.3rem;
+}
+
+.descricao-login {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icones-login {
+  font-size: 3.5rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.icones-login:visited {
+  color: white;
+}
+
+.icones-login:hover {
+  color: #f5deb3; 
+  animation: pularObjeto 1s infinite;
+}
+
+@keyframes pularObjeto {
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes deslocarParaDireita {
+  
+  50% {
+    padding-left: 300px;
+  }
+  
+}
