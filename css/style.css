@@ -681,9 +681,9 @@ header :nth-child(7){
         display: none;
     }
 
-    header :nth-child(7){
+    /* header :nth-child(7){
         display: block;
-    }
+    } */
     
     .em-producao :nth-child(2){
         font-size: 3rem;
@@ -712,4 +712,5 @@ header :nth-child(7){
     .nav-about-dev {
         display: none;
     }
+    
 }
