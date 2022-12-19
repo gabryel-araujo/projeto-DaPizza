@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recupere a sua senha</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recuperacao.css">
     <link rel="icon" href="../images/logoPizzaria.png">
     <script src="https://kit.fontawesome.com/f1952cfd14.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
       <nav id="nav-bar" class="links">
-        <a class="nav-imagem" href="#"><img id="logo" src="../images/logoPizzaria.png" alt="logo da pizzaria"></a>
+        <a class="nav-imagem" href="../index.html"><img id="logo" src="../images/logoPizzaria.png" alt="logo da pizzaria"></a>
         <a class="links nav-cardapio" href="../index.html#cardapio">Cardápio</a>
         <a class="links nav-sobre-nos" href="../index.html#about-us">Sobre nós</a>
         <a class="links nav-localizacao" href="../index.html#localizacao">Nossa localização</a>
@@ -24,18 +26,55 @@
   </header>
 
   <main class="d-flex justify-content-center" style="margin-top:100px;">
-    <div id="background" class="bg-dark mt-5 d-flex flex-column justify-content-center align-items-center p-5 w-25 rounded-5">
+    <div id="background" class="d-flex flex-column justify-content-center align-items-center p-5 rounded-5">
         <h1 class="text-light text-center ">Problemas ao fazer login?</h1>
         <section class="border border-2 rounded-circle p-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-lock text-light" viewBox="0 0 16 16">
                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
             </svg>
         </section>
-        <p class="text-secondary text-center">Insira seu e-mail e enviaremos um link para você voltar a acessar sua conta</p>
-        <input type="email" placeholder="Digite o seu Email" class="p-2 rounded-3 w-100 text-center">
-        <input type="button" value="Enviar" class="mt-2 rounded-2 w-100 p-2">
-        <a href="cadastro.html" class="mt-3">Criar uma conta</a>
+        <p class="text-secondary text-center fs-5">Insira seu e-mail e enviaremos um link para você voltar a acessar sua conta</p>
+        <div class="input-group mb-3 w-100">
+          <input type="text" class="form-control fs-5" placeholder="e-mail" aria-label="e-mail" aria-describedby="basic-addon2">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">@gmail.com</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Selecione seu E-mail</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">@gmail.com</a></li>
+            <li><a class="dropdown-item" href="#">@hotmail.com</a></li>
+            <li><a class="dropdown-item" href="#">@outlook.com</a></li>
+            <li><a class="dropdown-item" href="#">@icloud.com</a></li>
+          </ul>
+        </div>
+        <input id="enviar" type="button" value="Enviar" data-bs-toggle="modal" data-bs-target="#acionador" class=" fs-5 mt-2 rounded-2 w-100 p-2">
+        <a href="cadastro.html" class="mt-3 text-light fs-5">Criar uma conta</a>
     </div>
+
+    <div class="modal fade" id="acionador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">E-mail de recuperação enviado!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center flex-column">
+            <section class="border border-success border-2 rounded-circle p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+            </section>
+            <p class="fs-5">Um e-mail com um link de redefinição de senha foi enviado para você.</p>
+            <p class="fs-5">Verifique a sua caixa de entrada e a caixa de <span class="text-danger">Spam.</span></p>
+            <p class="fs-5">O link irá expirar em <strong>5 minutos</strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success w-25 fs-3" data-bs-dismiss="modal">Ok<i class="bi bi-hand-thumbs-up"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
 
   </main>
 

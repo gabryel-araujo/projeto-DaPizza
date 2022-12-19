@@ -1,5 +1,17 @@
-@media (max-width: 1366px){
+#background {
+    margin-top: 3rem;
+    width: fit-content;
+    background-color: #2b2b2b;
+}
+
+body {
+    background-image: url(../images/madeira-bg.png);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 450px){
     #background {
-        width: 500px;
+        margin-top: 80px;
+        width: 80vw;
     }
 }

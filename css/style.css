@@ -314,7 +314,7 @@ header :nth-child(7){
 .titulos {
     border-top: 0.05rem solid #f5deb3;
     align-self: center;
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-family: 'Pacifico',serif;
     text-shadow: 0.1rem 0.1rem 0.1rem #f5deb3, 0.3rem 0.3rem 0.1rem black;
     color: #1c1f21;
@@ -336,6 +336,7 @@ header :nth-child(7){
     height: 10rem;
     width: 100%;
     margin-top: auto;
+    bottom: 0;
 }
 
 .footer-image {
