@@ -31,7 +31,7 @@
         <h1 class="titulos">Monte Sua Pizza</h1>
     <h2>Escolha um tamanho:</h2>
     <form id="my-form1">
-        <select name="opcoes" id="opcoes" class="color">
+        <select name="tamanho" id="tamanho" class="color">
             <option value="Pequena">Pequena</option>
             <option value="Média">Média</option>
             <option value="Grande">Grande</option>
@@ -40,7 +40,7 @@
       </form>
     <h2>Escolha um tipo de Massa: </h2>
     <form id="my-form2">
-        <select name="opcoes" id="opcoes" class="color">
+        <select name="massa" id="masssa" class="color">
             <option value="Tradicional">Tradicional</option>
             <option value="Integral">Integral</option>
             <option value="Siciliana">Siciliana</option>
@@ -49,22 +49,52 @@
       </form>
       <h2>Escolha um tipo de queijo: </h2>
       <form id="my-form3">
-        <select name="opcoes" id="opcoes" class="color">
-            <option value="Tradicional">Mussarela</option>
-            <option value="Integral">Parmessão</option>
-            <option value="Siciliana">Provolone</option>
-            <option value="Napolitana">Cheddar</option>
+        <select name="queijo" id="queijo" class="color">
+            <option value="Mussarela">Mussarela</option>
+            <option value="Parmessão">Parmessão</option>
+            <option value="Provolone">Provolone</option>
+            <option value="Cheddar">Cheddar</option>
         </select>
       </form>
-    <h2>Escolha um recheio: </h2>
+      <!-- <h2>Escolha se deseja um, dois ou três recheios:</h2>
+      <form id="my-formn">
+        <input type="radio" id="Um" name="recheio" value="Um">
+        <label for="Um">Um Recheio</label><br>
+        <input type="radio" id="Dois" name="recheio" value="Dois">
+        <label for="Dois">Dois Recheios</label><br>
+        <input type="radio" id="Três" name="recheio" value="Três">
+        <label for="Três">Três Recheios</label><br>
+      </form> -->
     <form id="my-form4">
-        <select name="opcoes" id="opcoes" class="color">
+        <h2>Escolha o primeiro recheio: </h2>
+        <select name="recheio1" id="recheio1" class="color">
             <option value="Calabresa">Calabresa</option>
             <option value="Bacon">Bacon</option>
             <option value="Ovo">Ovo</option>
             <option value="Manjericão">Manjericão</option>
         </select>
       </form>
+      <form id="my-form42">
+      <h2>Escolha o segundo recheio: </h2>
+      <select name="recheio2" id="recheio2" class="color">
+        <option value="Nada">Nada</option>
+          <option value="Calabresa">Calabresa</option>
+          <option value="Bacon">Bacon</option>
+          <option value="Ovo">Ovo</option>
+          <option value="Manjericão">Manjericão</option>
+      </select>
+    </form>
+    <form id="my-form43">
+    <h2>Escolha o terceiro recheio: </h2>
+    <select name="recheio3" id="recheio3" class="color">
+        <option value="Nada">Nada</option>
+        <option value="Calabresa">Calabresa</option>
+        <option value="Bacon">Bacon</option>
+        <option value="Ovo">Ovo</option>
+        <option value="Manjericão">Manjericão</option>
+    </select>
+  </form>
+      <!-- Fim do espaço dos recheios -->
     <h2>Escolha uma borda recheada: </h2>
     <form id="my-form5">
         <select name="opcoes" id="opcoes" class="color">
@@ -76,13 +106,12 @@
       </form>
       <br>
         <div class="enviar-box">
-            <button form="my-form1 my-form2 my-form3 my-form4 my-form5" class="alinhar enviar-button" id="enviar">Enviar</button>
+            <button onclick="prices()" form="my-form1 my-form2 my-form3 my-form41 my-form42 my-form43 my-form5" class="alinhar enviar-button" id="enviar">Enviar</button>
          </div>
     </div>
         <div class="div2">
             <h1 class="titulos">Pizza escolhida</h1>
             <div id="mensagem">
-                <!-- <input type="text" name="preco" id="preco" readonly> -->
               </div>
         </div>
     </div>
